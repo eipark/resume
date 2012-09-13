@@ -1,0 +1,184 @@
+%%
+%% The following code sets up the document formatting
+%%
+
+%this assumes that res_yy.sty is in some path
+\documentstyle[hyperref, margin, line]{resume_style}
+
+\hypersetup{backref,pdfpagemode=Full,colorlinks=true,backref}
+
+\addtolength{\oddsidemargin}{-0.45in}
+\addtolength{\voffset}{-0.30in}
+\addtolength{\textwidth}{1.00in} \addtolength{\textheight}{1.50in}
+
+\renewcommand{\namefont}{\LARGE\emph}
+
+
+
+%%
+%% The following code defines some macros for terms which have raised font
+%% (ie 4\fourth would result 4th with the 'th' raised (superscripted)
+%%
+
+\def\Cplusplus{{\rm C\raise.5ex\hbox{\small ++}}}
+\def\CSharp{{\rm C\raise.5ex\hbox{\small \#}}}
+% 'st' 'nd' 'rd' 'th' superscripts for numbers
+\def\first{{\raise.5ex\hbox{\small st}}}
+\def\second{{\raise.5ex\hbox{\small nd}}}
+\def\third{{\raise.5ex\hbox{\small rd}}}
+\def\fourth{{\raise.5ex\hbox{\small th}}}
+
+
+
+%%
+%% starting the actual document
+%%
+
+\begin{document}
+
+%the name in big fonts at the top of resume
+%this is left aligned
+\name{Ernest I. Park} 
+\address{Web: erniepark.com \ \ E-mail: ernestipark@gmail.com}
+
+
+
+
+
+%this is right aligned
+
+\begin{resume}
+
+%%
+%% This section of code is inelegant, but I'm too lazy to fix it
+%%
+
+\section{\textsc{Education}}
+
+\textbf{Massachusetts Institute of Technology} \hfill{June 2012}\\
+Bachelor of Science in Computer Science and Engineering \hfill{GPA: 4.6/5.0} 
+
+\textbf{Selected Coursework}: Artificial Intelligence, Computer Architecture, Computer Systems Engineering, Design and Analysis of Algorithms, Multi-Modal User Interfaces, Performance Engineering, Software Construction, Distributed Systems
+
+
+%%
+%% the meat of the resume starts now
+%%
+
+\begin{formatb}
+  \employer{l}\title{r}\\
+  \location{l}\dates{r}\\
+  \body\\
+\end{formatb}
+
+\section{\textsc{Work Experience}}
+
+\employer{\textbf{MicroEval}}
+\title{Palo Alto, California}
+\location{\em{Co-Founder \& CTO - microeval.com}}
+\dates{\em{April 2012 - September 2012}}
+\begin{position}
+Co-founded startup that aims to improve employee performance evaluations in the workplace with two others. Responsible for all technical decisions as CTO and built initial code base and development workflow. Developed RESTful PHP API Backend with Kohana Framework and Backbone.js based Front-end. Worked directly with customers and users to improve product. Made key strategic business decisions for company. Sought out and managed contract designers and developers. Participated in the Y Combinator Summer 2012 class. 
+\end{position}
+
+\employer{\textbf{MITx}}
+\title{Cambridge, Massachusetts}
+\location{\em{Developer - mitx.mit.edu}}
+\dates{\em{December 2011 - May 2012}}
+\begin{position}
+Developed features and built infrastructure to support the release of a new online education platform. Coded/designed front-end components (HTML/CSS/Javascript) as well as worked with back-end features in Django. Helped refine and establish development workflow. Created a Javascript based drawing playback system as part of a senior capstone project.
+\end{position}
+
+\employer{\textbf{Ooyala}}
+\title{Mountain View, California}
+\location{\em{Software Engineering Intern}}
+\dates{\em{May 2011 - August 2011}}
+\begin{position}
+Worked under the scrum methodology on the analytics team with the same responsibilities as a full-time engineer. Pushed out a product by coding across the whole analytics stack as well as working on documentation and coordinating design with product managers. Designed and coded a real-time analytics infrastructure prototype in a two-person team in three weeks which won a company award for best project.
+\end{position}
+
+\employer{\textbf{Africa Information Technology Initiative}}
+\title{Kigali, Rwanda}
+\location{\em{Instructor}}
+\dates{\em{March - July 2010}}
+\begin{position}
+Chosen as one of four instructors among several dozen applicants to teach a six week computer programming and entrepreneurship course to students at the Kigali Institute of Science and Technology. Was responsible for all aspects of the course including teaching lectures, designing labs, networking with administration, planning logistics, adjusting curriculum, and working with students.\end{position}
+
+% \employer{\textbf{Tiny Propeller}}
+% \title{Cambridge, Massachusetts}
+% \location{\em{Developer - www.optionize.com}}
+% \dates{\em{May 2009 - May 2010}}
+% \begin{position}
+% Developed features for an internet polling service.  Worked in a three person team to design and plan the application from both a code and usability perspective.\end{position}
+%   
+
+%%
+%% We use the same formatting for projects as for work experience
+%% Shown below is the formatting used previously
+%%
+%%  \begin{formatb}
+%%    \employer{l}\title{r}\\
+%%    \location{l}\dates{r}\\
+%%    \body\\
+%%  \end{formatb}
+%%
+%% 
+%%  Note that \location is now being used for non-location information
+%%%
+
+%
+%\begin{formatb}
+%  \employer{l}\dates{r}\\
+%  \body\\
+%\end{formatb}
+
+\section{\textsc{Skills}}
+
+\textbf Technical: PHP (Kohana), HTML, CSS, Javascript (jQuery, Backbone), MySQL, Git, UNIX, Ruby, Python, Java\\
+
+\textbf Non-Technical: Semi-fluent Korean, Conversational Spanish
+
+\section{\textsc{Awards}}
+
+\begin{formatb}
+  \employer{l}\dates{r}\\
+  \body\\
+\end{formatb}
+MIT 6.470 Web - Programming Competition - 3$^{rd}$ Place \hfill{\em{January 2011}}\\
+MIT 6.190 Web - Based Speech Recognition App Competition - 1$^{st}$ Place \hfill{\em{January 2010}}\\
+Edward J. Bloustein Distinguished Scholar \hfill{\em{June 2008}}\\
+West-Windsor Plainsboro Student-Athlete Scholarship\hfill{\em{June 2008}}\\
+American Legion Jersey Boys' State Governor Scholarship \hfill{\em{July 2007}}\\
+Bausch and Lomb Honorary Science Award \hfill{\em{June 2007}}
+
+\section{\textsc{Extra Curricular}}
+\begin{formatb}
+  \employer{l}\dates{r}\\
+  \body\\
+\end{formatb}
+MIT Asian Christian Fellowship \hfill{\em{January 2010 - May 2012}}\\
+Baker House Dormitory Webmaster \hfill{\em{September 2009 - May 2012}}\\
+MIT Freshman Leadership Program Counselor \hfill{\em{June 2009 - September 2010}}\\
+MIT Logarhythms A Cappella Group (Webmaster) \hfill{\em{September 2008 - May 2012}}\\
+MIT Varsity Ice Hockey (Captain) \hfill{\em{September 2008 - May 2012}}\\
+MIT Varsity Lacrosse \hfill{\em{Spring 2009, Spring 2012}}
+
+
+%%
+%% Nothing special here, just a normal table
+%%
+
+%\section{\textsc{Course Work}}
+%  \begin{tabular}{lllll}
+%  Information Networks   & \ \ & Machine Learning    & \ \ & Theory of Computation \\ 
+%  Computer Graphics      & \ \ & Machine Vision      & \ \ & Programming Languages \\
+%  Software Engineering   & \ \ & Algorithms          & \ \ & Artificial Intelligence     \\
+%  Operating Systems      & \ \ & Databases           & \ \ & Computer Architecture \\
+%  Numerical Methods      & \ \ & Graph Theory        & \ \ & Differential Equations      \\
+%  Probability Theory     & \ \ & Number Theory       & \ \ & Differential Geometry       \\
+%  Advanced Calculus      & \ \ & Abstract Algebra    & \ \ & Advanced Combinatorics   \\
+%  \end{tabular}
+
+
+\end{resume}
+\end{document}
